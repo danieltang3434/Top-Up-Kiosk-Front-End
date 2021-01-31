@@ -29,8 +29,7 @@ export class TopUpComponent implements OnInit {
   private isTokenRequested = false;
 
   private headers = {
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'Access-Control-Allow-Origin': '/',
+    'Content-Type': 'application/x-www-form-urlencoded'
   };
 
   private getTokenBody = {
