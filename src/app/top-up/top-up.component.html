@@ -1,0 +1,24 @@
+<!-- Page Content -->
+<div class="container mt-5">
+
+    <div class="row">
+  
+      <div class="col-lg-12 text-center" *ngIf="isGettingData">
+        <h1 class="mt-5">Loading...</h1>
+        <p class="lead">Please wait while we checking your membership info.</p>  
+      </div>
+
+      <div class="col-lg-12 text-center" *ngIf="isShowError">
+        <h1 class="mt-5">Error</h1>
+        <p class="lead">Please try again.</p>  
+      </div>
+
+      <div class="col-lg-12 text-center" *ngIf="isDataRetrieved">
+        <h1 class="mt-5">Welcome back, {{konbiCredits.user_name}}</h1>
+        <h3>Account Balance: {{konbiCredits.balance}}</h3>
+        <p class="lead">Please your desired top up amount:</p>  
+      </div>
+  
+    </div>
+  
+  </div>
