@@ -23,8 +23,8 @@ export class TopUpComponent implements OnInit {
     top_up_amount: 0
   };
 
-  private getTokenUrl = 'http://me.konbi.me/?oauth=token';
-  private doPaymentUrl = 'http://me.konbi.me/index.php/wp-json/wp/v2/wallet/pay';
+  private getTokenUrl = 'https://me.konbi.me/?oauth=token';
+  private doPaymentUrl = 'https://me.konbi.me/index.php/wp-json/wp/v2/wallet/pay';
   private token = '';
   private isTokenRequested = false;
 
